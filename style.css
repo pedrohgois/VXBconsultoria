@@ -1,0 +1,20 @@
+.whatsapp-flutuante {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  background-color: rgb(94, 213, 138);
+  border-radius: 100px;
+  z-index: 99;
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(/img/whatsapp-640x640.png);
+  background-position: center;
+  background-size: cover;
+  transition: ease 0.3s;
+}
+
+.whatsapp-flutuante:hover {
+  background-color: rgb(119, 238, 163);
+}
