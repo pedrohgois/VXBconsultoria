@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+
+.canal-youtube {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.inscrever-canal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: auto;
+  text-align: center;
+}
+
+.inscrever-canal h3 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #040245;
+  white-space: pre-line;
+  margin-bottom: 20px;
+}
+
+.inscrever-canal span {
+  font-size: 30px;
+  font-weight: 300;
+  white-space: pre-line;
+  margin-bottom: 50px;
+  line-height: 1.1;
+}
+
+.inscrever-canal span:last-child {
+  padding: 20px;
+  font-weight: 600;
+  border: solid 1px #040245;
+  color: #040245;
+  font-size: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.inscrever-canal span:last-child:hover {
+  padding: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  background-color: rgb(3, 0, 84);
+  transition: 0.4s;
+}
+
+.video-canal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+
+@media (max-width: 920px) {
+  .canal-youtube {
+    flex-direction: column;
+  }
+
+  .inscrever-canal {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .video-canal {
+    width: 100%;
+  }
+}
