@@ -91,7 +91,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end !important;
     width: 100%;
     height: 68.22vw;
     min-height: 0;
@@ -129,6 +128,6 @@ a {
     align-items: center;
     justify-content: center;
     transition: 0.5s ease;
-    margin-bottom: 30px;
+    margin-top: 50%;
   }
 }
