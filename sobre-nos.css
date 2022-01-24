@@ -109,6 +109,7 @@ a {
     }
     .texto-s1 p {
         font-size: 5.5vw;
+        line-height: 1.40;
     }
     .btn-sobre-nos {
         display: flex;
@@ -124,6 +125,6 @@ a {
         align-items: center;
         justify-content: center;
         transition: 0.5s ease;
-        margin-top: 50%;
+        margin-top: 58%;
     }
 }
