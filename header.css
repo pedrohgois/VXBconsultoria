@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f4f7;
+  width: 100%;
+  height: auto;
+  padding: 0 10vw 0 10vw;
+  box-sizing: border-box;
+}
+
+.logo-header {
+  align-self: center;
+  height: 160px;
+  width: auto;
+}
+
+.texto-header-content {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.2em;
+  width: 600px;
+  height: auto;
+  margin: 50px 0 50px 0;
+  white-space: pre-line;
+}
+@media (min-width: 1600px) {
+  .texto-header-content {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 930px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f2f4f7;
+    width: 100%;
+    padding: 50px 20px 20px 20px;
+    box-sizing: border-box;
+    height: auto;
+  }
+
+  .logo-header {
+    margin: 0 35px 10px 0;
+  }
+
+  .texto-header-content {
+    font-size: 6.5vw;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 1.5em;
+  }
+}
+
+.tho-1 {
+  font-weight: 500;
+  color: #040245;
+  opacity: 0;
+  animation: opacity-text-header 2s;
+  animation-fill-mode: forwards;
+}
+
+.tho-2 {
+  font-weight: 500;
+  color: #040245;
+  opacity: 0;
+  animation: opacity-text-header 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
+}
+
+.tho-3 {
+  color: #0f4c64;
+  opacity: 0;
+  animation: opacity-text-header 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
+}
+
+.tho-4 {
+  color: #0f4c64;
+  opacity: 0;
+  animation: opacity-text-header 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.7s;
+}
+
+.tho-5 {
+  color: #040245;
+  font-weight: 500;
+  opacity: 0;
+  animation: opacity-text-header 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.7s;
+}
+
+@keyframes opacity-text-header {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
