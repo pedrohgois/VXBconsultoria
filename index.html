@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="canal-youtube.css">
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav_responsivo.css">
 
 </head>
 
@@ -29,16 +30,19 @@
       <span class="tho-5">jurídicas e financeiras</span>
     </div>
   </header>
-
-  <nav class="nav-content">
-    <div class="nav-elements-content">
-      <a class="nav-element ne1" href="">Home</a>
-      <a class="nav-element ne2" href="">Serviços</a>
-      <a class="nav-element ne3" href="">Sobre Nós</a>
-      <a class="nav-element ne4" href="">Contato</a>
-      <a class="nav-element ne5" href="">Blog</a>
-    </div>
-  </nav>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav class="nav-content" id="overlay-content">
+      <div class="nav-elements-content">
+        <a class="nav-element ne1" href="">Home</a>
+        <a class="nav-element ne2" href="">Serviços</a>
+        <a class="nav-element ne3" href="">Sobre Nós</a>
+        <a class="nav-element ne4" href="">Contato</a>
+        <a class="nav-element ne5" href="">Blog</a>
+      </div>
+    </nav>
+  </div>
+  <span class="menu-hamburguer" onclick="openNav()">&#9776;</span>
 
   <div class="sobre-nos">
     <div class="foto-advogados">
@@ -259,6 +263,7 @@
 
   <script type="text/javascript" src="all.min.JS"></script>
   <script type="text/javascript" src="servicos.js"></script>
+  <script type="text/javascript" src="nav_responsivo.js"></script>
 
 
 
