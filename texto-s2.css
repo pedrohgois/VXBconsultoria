@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+
+.txt-s2 {
+  width: 100%;
+  height: auto;
+  padding: 80px 10px 80px 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.6em;
+  color: #040245;
+  box-sizing: border-box;
+}
+
+.txt-s2-light {
+  font-weight: 300;
+}
+
+.txt-s2-bold {
+  font-weight: 500;
+}
+
+@media (max-width: 920px) {
+  .txt-s2 {
+    font-size: 5vmin;
+    padding: 80px 10px 30px 10px;
+  }
+}
