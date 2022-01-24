@@ -9,7 +9,7 @@ var nav = document.querySelector('nav');
 
   function headerInteration(elemento, antiga, nova) {
     
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    if ((document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) && (window.innerWidth > 920)) {
       elemento.classList.remove(antiga);
       elemento.classList.add(nova);
       document.querySelector(".nav-elements-content").style.fontSize = "22px";
@@ -30,7 +30,7 @@ var nav = document.querySelector('nav');
 
 
 function whatsappFlutuante() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if ((document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) && (window.innerWidth > 920)) {
     document.getElementById("whatsapp-flutuante").style.width = "50px";
     document.getElementById("whatsapp-flutuante").style.height = "50px";
   }else {
