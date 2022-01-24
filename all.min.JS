@@ -1,7 +1,10 @@
 window.onscroll = function() {
+  if (window.innerWidth > 920) {
   headerInteration(nav, 'nav-content', 'nav-content-scroll')
   whatsappFlutuante()
-
+  }else {
+    return;
+  }
   
 };
 
