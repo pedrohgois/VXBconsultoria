@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+.servicos {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: url(/img/textura.png);
+    background-size: 50px;
+    background-color: #f2f4f7;
+    font-family: "Inter", sans-serif;
+    padding: 70px 40px 70px 40px;
+    box-sizing: border-box;
+}
+
+
+/* Estilização mobile */
+
+@media (max-width: 920px) {
+    .servicos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 70px 0px 70px 0px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        margin: 50px auto 30px auto;
+    }
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100% !important;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0px 20px !important;
+    }
+    .accordion {
+        display: flex;
+        flex-grow: 1 !important;
+        margin-left: 15px;
+        width: auto !important;
+        padding-right: auto;
+        box-sizing: border-box;
+        background-image: url(/img/mais.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 20px;
+    }
+    .panel {
+        width: 100%;
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+    .panel p {
+        margin-bottom: 30px;
+    }
+    .card:hover {
+        -ms-transform: scale(1);
+        /* IE 9 */
+        -webkit-transform: scale(1);
+        /* Safari 3-8 */
+        transform: scale(1) !important;
+        box-shadow: none !important;
+        cursor: pointer;
+    }
+}
+
+
+/*Fim estilização mobile*/
+
+.accordion {
+    background-color: rgb(255, 255, 255);
+    color: #040245;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 40px;
+    transition: 0.4s;
+}
+
+.panel {
+    background-color: white;
+    max-height: auto;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.para-voce {
+    border-top: solid 15px white;
+}
+
+.para-empresas h1 {
+    margin-left: 30px;
+    font-size: 40px;
+    color: #040245;
+}
+
+.para-voce h1 {
+    margin-left: 30px;
+    font-size: 40px;
+    color: #0f4c64;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    justify-content: center;
+    margin: 50px auto 30px auto;
+}
+
+.card {
+    width: 20%;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px #eff2fc;
+    border-right: none;
+    padding: 20px;
+}
+
+.card:last-child {
+    border-right: 1px;
+}
+
+.card:hover {
+    -ms-transform: scale(1.015);
+    /* IE 9 */
+    -webkit-transform: scale(1.015);
+    /* Safari 3-8 */
+    transform: scale(1.045);
+    box-shadow: -3px 10px 15px rgb(136, 136, 136, 0.1);
+    cursor: pointer;
+}
+
+.card img {
+    width: auto;
+    height: 10%;
+    margin: 10px 0 10px 0;
+}
+
+.para-empresas h2 {
+    margin: 15px 0 20px 0;
+    color: #040245;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.2em;
+    white-space: pre-line;
+}
+
+.para-voce h2 {
+    margin: 15px 0 20px 0;
+    color: #0f4c64;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.2em;
+    white-space: pre-line;
+}
+
+.card p {
+    line-height: 1.3em;
+    font-size: 15px;
+}
+
+.bold-400 {
+    font-weight: 600;
+}
+
+.btn-agendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 6px;
+    margin: 50px auto 0 auto;
+    width: 350px;
+    height: 75px;
+}
+
+.btn-empresa {
+    background-color: #040245;
+}
+
+.btn-empresa:hover {
+    background-color: rgb(25, 22, 87);
+}
+
+.btn-voce {
+    background-color: #0f4c64;
+}
+
+.btn-voce:hover {
+    background-color: #2f5e70;
+}

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+.nav-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 68px;
+  width: 100%;
+}
+
+.nav-content-fixed {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  justify-content: right;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  transition: ease 0.4s;
+}
+.nav-content-fixed::before {
+  position: absolute;
+  left: 100px;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-image: url(/img/logo-principal.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-content-scroll {
+  display: flex;
+  position: fixed;
+  top: -150px;
+  z-index: 99;
+  justify-content: right;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  transition: ease 0.4s;
+}
+
+@media (max-width: 920px) {
+  .nav-content-scroll {
+    display: none;
+  }
+  #overlay-content {
+    display: flex;
+    color: white;
+  }
+  .nav-elements-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-content {
+    justify-content: space-around;
+    height: 100%;
+    color: white;
+    font-weight: 700 !important;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .overlay a {
+    padding: 20px 0px 20px 0px !important;
+    font-weight: 300 !important;
+    color: #484848 !important;
+    font-size: 30px !important;
+  }
+}
+
+.nav-content-scroll::before {
+  position: absolute;
+  left: 100px;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-image: url(/img/logo-principal.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-elements-content {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  padding: 20px 0 20px 0;
+  /* border-bottom: 1px solid rgb(238, 238, 238);*/
+}
+
+.nav-element {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 20px 0 20px;
+  color: #424242;
+}
+
+.nav-element:hover {
+  font-weight: 200;
+  color: #999999;
+}
