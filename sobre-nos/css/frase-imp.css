@@ -6,7 +6,7 @@
   text-align: center;
   line-height: 1.5;
   box-sizing: border-box;
-  color: #051933;
+  color: #021e43;
   font-weight: 500;
 }
 
@@ -15,7 +15,7 @@
     width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 10px 40px 40px 40px;
+    padding: 30px 40px 80px 40px;
     font-size: 30px;
     font-weight: 500;
   }
