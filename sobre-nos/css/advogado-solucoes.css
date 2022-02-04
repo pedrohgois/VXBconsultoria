@@ -6,6 +6,8 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -15,15 +17,16 @@
   flex-direction: row;
   gap: 30px;
   align-items: center;
+  justify-content: center;
 }
 
 .balloon {
   width: 300px;
   font-family: "Inter", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.3em;
-  padding: 50px 25px 50px 25px;
-  border: solid 1px grey;
+  padding: 40px 20px 40px 20px;
+  border: solid 1px #cfcfcf;
   border-radius: 20px;
   color: #021e43;
   font-weight: 500;
@@ -37,23 +40,23 @@
   background-position: center;
   background-size: cover;
   width: 30px;
-  height: 40px;
+  height: 20px;
   background-color: rgb(247, 247, 247);
   position: absolute;
   top: calc(50% - 20px);
-  right: -30px;
+  right: -15px;
 }
 
 .advogado-solucoes-txt {
-  flex: 1;
+  max-width: 700px;
   height: auto;
 }
 
 .advogado-solucoes-txt p {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.3;
   padding: 40px;
-  color: #021e43;
+  color: #4d4d4d;
 }
