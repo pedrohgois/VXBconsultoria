@@ -4,6 +4,7 @@
   height: 800px;
   font-family: "Inter", sans-serif;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .dados-advogados :last-child {
