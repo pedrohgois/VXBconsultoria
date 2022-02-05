@@ -21,13 +21,13 @@
 }
 
 .balloon {
+  background-color: rgb(255, 255, 255);
   min-width: 300px;
   width: 300px;
   font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 1.3em;
   padding: 40px 20px 40px 20px;
-  border: solid 1px #cfcfcf;
   border-radius: 20px;
   color: #021e43;
   font-weight: 500;
