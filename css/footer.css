@@ -10,7 +10,7 @@ footer {
   padding: 0 5vw 0 5vw;
   box-sizing: border-box;
   background-color: #051933;
-  background-image: linear-gradient(to bottom right, #051933, #082c59);
+  background-image: linear-gradient(to top, #031124, #052042);
   position: relative;
 }
 
@@ -88,7 +88,7 @@ footer {
 }
 
 .contato-footer h4 {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
   position: absolute;
@@ -99,7 +99,7 @@ footer {
 .contato-footer p {
   display: inline-block;
   position: relative;
-  font-size: 19px;
+  font-size: 15px;
   margin-top: 20px;
   font-weight: 200;
   line-height: 1.3;
