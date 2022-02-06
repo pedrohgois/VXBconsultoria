@@ -1,6 +1,6 @@
 window.onscroll = function() {
-  if (window.innerWidth > 920) {
   whatsappFlutuante()
+  if (window.innerWidth > 920) {
   scrollUpDown()
   }else {
     return;
@@ -29,7 +29,7 @@ var currentScrollPos = window.pageYOffset;
 
 
 function whatsappFlutuante() {
-  if ((document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) && (window.innerWidth > 920)) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     document.getElementById("whatsapp-flutuante").style.width = "50px";
     document.getElementById("whatsapp-flutuante").style.height = "50px";
   }else {
