@@ -11,9 +11,11 @@ footer {
   box-sizing: border-box;
   background-color: #051933;
   background-image: linear-gradient(to bottom right, #051933, #082c59);
+  position: relative;
 }
 
 .logo-footer-sociais {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -23,13 +25,13 @@ footer {
 }
 
 .logo-footer {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-image: url(/img/logo-footer.png);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  margin: 15px 50px 0px 0px;
+  margin: 15px 30px 0px 0px;
 }
 
 .sociais-footer {
@@ -45,73 +47,110 @@ footer {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
+}
+
+.whatsapp,
+.youtube,
+.instagram {
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.whatsapp:hover,
+.youtube:hover,
+.instagram:hover {
+  opacity: 1;
 }
 
 .whatsapp {
   background-image: url(/img/whatsapp-icon.svg);
-  background-position: center;
 }
 
 .youtube {
   background-image: url(/img/youtube-icon.svg);
-  background-position: center;
 }
 
 .instagram {
   background-image: url(/img/instagram-icon.svg);
-  background-position: center;
 }
 
 .contato-footer {
+  margin-top: 50px;
   width: 45%;
   height: 100%;
   color: white;
   font-family: "Inter", sans-serif;
+  text-decoration: none;
+  position: relative;
 }
 
 .contato-footer h4 {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 23px;
+  font-weight: 500;
   margin-bottom: 20px;
+  position: absolute;
+  top: -30px;
+  left: -45px;
 }
 
 .contato-footer p {
   display: inline-block;
   position: relative;
-  font-size: 20px;
-  margin-top: 30px;
+  font-size: 19px;
+  margin-top: 20px;
   font-weight: 200;
   line-height: 1.3;
+  text-decoration: none;
+  color: white;
+}
+
+.contato-footer a {
+  display: block;
 }
 
 .email-footer::before {
   display: inline-block;
   position: absolute;
-  top: -5px;
+  top: 0px;
   left: -50px;
   content: "";
   background-image: url(/img/email.svg);
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .endereco-footer::before {
   display: inline-block;
   position: absolute;
-  top: 5px;
+  top: 9px;
   left: -50px;
   content: "";
   background-image: url(/img/localizacao.svg);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-footer::before {
+  display: inline-block;
+  position: absolute;
+  top: -4px;
+  left: -50px;
+  content: "";
+  background-image: url(/img/whatsapp.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 920px) {
@@ -121,10 +160,11 @@ footer {
   }
 
   .logo-footer-sociais {
+    margin-top: 30px;
     align-items: center;
     width: 100%;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .contato-footer {
@@ -134,5 +174,9 @@ footer {
 
   .contato-footer p {
     margin-left: 30px;
+  }
+  .contato-footer h4 {
+    top: -50px;
+    left: -10px;
   }
 }
