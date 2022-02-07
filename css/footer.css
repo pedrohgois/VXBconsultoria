@@ -80,6 +80,7 @@ footer {
 .contato-footer {
   margin-top: 50px;
   width: 45%;
+  max-width: 450px;
   height: 100%;
   color: white;
   font-family: "Inter", sans-serif;
@@ -128,7 +129,7 @@ footer {
 .endereco-footer::before {
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 3px;
   left: -50px;
   content: "";
   background-image: url(/img/localizacao.svg);

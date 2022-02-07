@@ -1,0 +1,242 @@
+body {
+  padding-top: unset;
+  font-family: "Inter", sans-serif;
+}
+
+body::before {
+  display: block;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-image: url(/img/logo-principal.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 40px auto 40px auto;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  row-gap: 100px;
+  padding-bottom: 100px;
+}
+
+.form-map {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  box-sizing: border-box;
+  padding: 50px 0 50px 0;
+  background-image: url(/img/textura.png);
+  background-size: 50px;
+  background-color: rgb(248, 248, 248);
+}
+
+.contato {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 50px 0 50px 0;
+}
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  background-color: rgb(240, 240, 240);
+  box-sizing: border-box;
+  margin: 0 15px 0 15px;
+  filter: drop-shadow(-4px 4px 3px rgb(0, 0, 0, 0.1));
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.contato-form h2 {
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-size: 19px;
+  font-weight: 600;
+  color: #031d38;
+}
+
+.form {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.BTEnvia {
+  font-size: 15px;
+  color: white;
+  margin: auto;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+  margin-top: 5px;
+  width: 50%;
+  background-color: #022245;
+  cursor: pointer;
+}
+
+.contato-map {
+  display: flex;
+  max-width: 600px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0d233c;
+  height: 100%;
+  border-radius: 4px;
+  filter: drop-shadow(-4px 4px 3px rgb(0, 0, 0, 0.1));
+}
+
+.contato-main {
+  width: 90%;
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  line-height: 1.3em;
+  padding: 30px 0 30px 0;
+}
+
+.contato-main p {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 17px;
+  text-justify: initial;
+  height: auto;
+}
+.email-main,
+.endereco-main,
+.whatsapp-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-main::before {
+  display: flex;
+  content: "";
+  background-image: url(/img/email.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.whatsapp-main::before {
+  display: flex;
+  content: "";
+  background-image: url(/img/whatsapp.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.endereco-main::before {
+  display: flex;
+  content: "";
+  background-image: url(/img/localizacao.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+}
+
+iframe {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.fname,
+.fwhats {
+  flex-basis: 100%;
+  box-sizing: border-box;
+}
+
+.femail,
+.fassunto,
+.fmensagem {
+  flex-basis: 100%;
+}
+
+.field {
+  margin: auto;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: solid 1px rgb(220, 220, 220);
+  padding: 10px;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+  height: unset !important;
+}
+
+@media all and (min-width: 920px) {
+  body {
+    padding-top: 200px;
+    font-family: "Inter", sans-serif;
+  }
+
+  body::before {
+    display: none;
+  }
+
+  .form-map {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-image: url(/img/textura.png);
+    background-size: 50px;
+    background-color: rgb(248, 248, 248);
+    box-sizing: border-box;
+    padding: 50px 0 50px 0;
+  }
+
+  .fname,
+  .fwhats {
+    flex-basis: calc(50% - 10px);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VxB Consultoria Jurídica - Contato</title>
+
+  <!--reset-->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/nav_responsivo.css">
+  <link rel="stylesheet" href="./css/sobre.css">
+  <link rel="stylesheet" href="./css/frase-imp.css">
+  <link rel="stylesheet" href="./css/advogado-solucoes.css">
+  <link rel="stylesheet" href="./css/dados-advogados.css">
+  <link rel="stylesheet" href="./css/form-contato.css">
+
+
+</head>
+
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav class="nav-content-fixed" id="overlay-content">
+      <div class="nav-elements-content">
+        <a class="nav-element ne1" href="/">Home</a>
+        <a class="nav-element ne2" href="/#servicos">Serviços</a>
+        <a class="nav-element ne3" href="/sobre-nos/">Sobre Nós</a>
+        <a class="nav-element ne4" href="/contato/">Contato</a>
+        <a class="nav-element ne5" href="/blog/">Blog</a>
+      </div>
+    </nav>
+  </div>
+  <span class="menu-hamburguer" onclick="openNav()">&#9776;</span>
+
+  <a href="https://api.whatsapp.com/send/?phone=%2B5531984950120&text&app_absent=0" class="whatsapp-flutuante"
+    id="whatsapp-flutuante"></a>
+
+  <main>
+
+    <section class="form-map">
+      <div class="contato-form">
+        <h2>AGENDE UM HORÁRIO</h2>
+        <form class="form" method="POST" action="./email.php">
+          <div class="fname">
+            <label for="fname">Seu nome</label><span>*</span><br>
+            <input class="field" name="nome" id="fname" placeholder="">
+          </div>
+          <div class="fwhats">
+            <label for="fwhatsapp">Whatsapp</label><span>*</span><br>
+            <input class="field" name="whatsapp" id="fwhatsapp" placeholder="(DDD) Número">
+          </div>
+          <div class="femail">
+            <label for="femail">E-mail</label><span>*</span><br>
+            <input class="field" name="email" id="femail" placeholder="">
+          </div>
+          <div class="fassunto">
+            <label for="fassunto">Assunto</label><span>*</span><br>
+            <input class="field" name="assunto" id="fassunto" placeholder="">
+          </div>
+          <div class="fmensagem">
+            <label for="fmensagem">Escreva aqui como podemos te ajudar</label><span>*</span><br>
+            <textarea class="field" name="mensagem" id="fmensagem" placeholder="" cols="50" rows="4"></textarea>
+          </div>
+          <input class="field" name="data" placeholder="Escolha uma data">
+          <input class="BTEnvia" name="BTEnvia" type="submit" value="Enviar">
+        </form>
+      </div>
+
+      <div class="contato-map">
+        <div class="contato-main">
+          <div class="whatsapp-main">
+            <p>31 98495-0120</p>
+          </div>
+          <div class="email-main">
+            <p>contato@vxbconsultoria.com.br</p>
+          </div>
+          <div class="endereco-main">
+            <p>Avenida João Cesar de Oliveira, 1284, Sala 303, Eldorado, Contagem – MG. CEP:
+              32315-000</p>
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d480073.5837389284!2d-44.040257000000004!3d-19.942312!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa695931f2fffff%3A0x594aeac5eb66ce1a!2sAv.%20Jo%C3%A3o%20C%C3%A9sar%20de%20Oliveira%2C%201284%20-%20Sala%20303%20-%20Eldorado%2C%20Contagem%20-%20MG%2C%2032315-000%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1644186985032!5m2!1spt-BR!2sus"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+      </div>
+    </section>
+
+
+    <div class="dados">
+      <h1>FERNANDA VIEIRA</h1>
+      <h2>Sócia-diretora</h2>
+      <div>
+        <p>Telefone: (31) 99771-6860</p>
+        <p>E-mail: fernanda@vxbconsultoria.com.br</p>
+      </div>
+    </div>
+    <div class="dados">
+      <h1>LUCAS GUILHERME BRAGA</h1>
+      <h2>Sócio-diretor</h2>
+      <div>
+        <p>Telefone: (31) 99322-3370</p>
+        <p>E-mail: lucas@vxbconsultoria.com.br</p>
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <footer>
+    <div class="logo-footer-sociais">
+      <div class="logo-footer"></div>
+      <div class="sociais-footer">
+        <a href="https://api.whatsapp.com/send/?phone=%2B5531984950120&text&app_absent=0"
+          class="whatsapp icon-footer"></a>
+        <a href="" class="youtube icon-footer"></a>
+        <a href="" class="instagram icon-footer"></a>
+      </div>
+
+    </div>
+    <div class="contato-footer">
+      <h4>ENTRE EM CONTATO</h4>
+      <a href="https://api.whatsapp.com/send/?phone=%2B5531984950120&text&app_absent=0">
+        <p class="whatsapp-footer">31 98495-0120</p>
+      </a>
+      <a href="">
+        <p class="email-footer">contato@vxbconsultoria.com.br</p>
+      </a>
+      <a href="">
+        <p class="endereco-footer">Avenida João Cesar de Oliveira, 1284, Sala 303, Eldorado, Contagem – MG. CEP:
+          32315-000
+        </p>
+      </a>
+
+    </div>
+
+  </footer>
+
+  <script type="text/javascript" src="/js/nav_fixed.js"></script>
+  <script type="text/javascript" src="/js/nav_responsivo.js"></script>
+
+
+
+</body>
+
+</html>

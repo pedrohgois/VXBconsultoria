@@ -1,0 +1,32 @@
+.dados {
+  width: 90%;
+  max-width: 450px;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: 1.3em;
+  color: #363636;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+}
+
+.dados h1 {
+  line-height: 1.2em;
+  font-size: 30px;
+  font-weight: 500;
+  color: #022245;
+}
+
+.dados h2 {
+  font-size: 22px;
+  color: #919191;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.dados > p {
+  margin-top: 20px;
+}
+
+.dados div {
+  margin-top: 30px;
+}
