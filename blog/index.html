@@ -2,439 +2,460 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VxB Consultoria Jurídica - Blog</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VxB Consultoria Jurídica - Blog</title>
 
-    <!--reset-->
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/nav_responsivo.css">
-    <link rel="stylesheet" href="./css/sobre.css">
-    <link rel="stylesheet" href="./css/frase-imp.css">
-    <link rel="stylesheet" href="./css/advogado-solucoes.css">
-    <link rel="stylesheet" href="./css/dados-advogados.css">
-    <link rel="stylesheet" href="./css/form-contato.css">
+  <!--reset-->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/nav_responsivo.css">
+  <link rel="stylesheet" href="./css/sobre.css">
+  <link rel="stylesheet" href="./css/frase-imp.css">
+  <link rel="stylesheet" href="./css/advogado-solucoes.css">
+  <link rel="stylesheet" href="./css/dados-advogados.css">
+  <link rel="stylesheet" href="./css/form-contato.css">
 
 
 </head>
 
 <body>
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <nav class="nav-content-fixed" id="overlay-content">
-            <div class="nav-elements-content">
-                <a class="nav-element ne1" href="/">Home</a>
-                <a class="nav-element ne2" href="/#servicos">Serviços</a>
-                <a class="nav-element ne3" href="/sobre-nos/">Sobre Nós</a>
-                <a class="nav-element ne4" href="/contato/">Contato</a>
-                <a class="nav-element ne5" href="/blog/">Blog</a>
-            </div>
-        </nav>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav class="nav-content-fixed" id="overlay-content">
+      <div class="nav-elements-content">
+        <a class="nav-element ne1" href="/">Home</a>
+        <a class="nav-element ne2" href="/#servicos">Serviços</a>
+        <a class="nav-element ne3" href="/sobre-nos/">Sobre Nós</a>
+        <a class="nav-element ne4" href="/contato/">Contato</a>
+        <a class="nav-element ne5" href="/blog/">Blog</a>
+      </div>
+    </nav>
+  </div>
+  <span class="menu-hamburguer" onclick="openNav()">&#9776;</span>
+
+  <a href="https://api.whatsapp.com/send/?phone=%2B5531984950120&text&app_absent=0" class="whatsapp-flutuante"
+    id="whatsapp-flutuante"></a>
+  <div class="row">
+    <!-- Control buttons -->
+    <div id="myBtnContainer" class="nav-blog">
+      <button class="btn active" onclick="filterSelection('all')"> Mostrar todos</button>
+      <button class="btn" onclick="filterSelection('cars')"> Consultoria empresarial</button>
+      <button class="btn" onclick="filterSelection('animals')"> Consultoria trabalhista</button>
+      <button class="btn" onclick="filterSelection('fruits')"> Estruturação empresarial</button>
+      <button class="btn" onclick="filterSelection('colors')"> Gerenciamento de contratos</button>
+      <button class="btn" onclick="filterSelection('colors')"> Análises contábeis</button>
+      <button class="btn" onclick="filterSelection('colors')"> Direito aéreo</button>
+      <button class="btn" onclick="filterSelection('colors')"> Planejamento familiar</button>
+      <button class="btn" onclick="filterSelection('colors')"> Direito imobiliário</button>
+      <button class="btn" onclick="filterSelection('colors')"> Consumo e prestação de serviços</button>
+      <button class="btn" onclick="filterSelection('colors')"> Relações trabalhistas</button>
     </div>
-    <span class="menu-hamburguer" onclick="openNav()">&#9776;</span>
 
-    <a href="https://api.whatsapp.com/send/?phone=%2B5531984950120&text&app_absent=0" class="whatsapp-flutuante" id="whatsapp-flutuante"></a>
-    <div class="row">
-        <!-- Control buttons -->
-        <div id="myBtnContainer" class="nav-blog">
-            <button class="btn active" onclick="filterSelection('all')"> Mostrar todos</button>
-            <button class="btn" onclick="filterSelection('cars')"> Consultoria empresarial</button>
-            <button class="btn" onclick="filterSelection('animals')"> Consultoria trabalhista</button>
-            <button class="btn" onclick="filterSelection('fruits')"> Estruturação empresarial</button>
-            <button class="btn" onclick="filterSelection('colors')"> Gerenciamento de contratos</button>
-            <button class="btn" onclick="filterSelection('colors')"> Análises contábeis</button>
-            <button class="btn" onclick="filterSelection('colors')"> Direito aéreo</button>
-            <button class="btn" onclick="filterSelection('colors')"> Planejamento familiar</button>
-            <button class="btn" onclick="filterSelection('colors')"> Direito imobiliário</button>
-            <button class="btn" onclick="filterSelection('colors')"> Consumo e prestação de serviços</button>
-            <button class="btn" onclick="filterSelection('colors')"> Relações trabalhistas</button>
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="container">
+      <div class="filterDiv cars">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
         </div>
-
-        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-        <div class="container">
-            <div class="filterDiv cars">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
-            <div class="filterDiv colors fruits">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
-            <div class="filterDiv cars">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
-            <div class="filterDiv colors">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
-            <div class="filterDiv cars animals">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
-            <div class="filterDiv colors">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
-            <div class="filterDiv animals">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
-            <div class="filterDiv animals">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
-            <div class="filterDiv fruits">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
-            <div class="filterDiv fruits animals">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
-            <div class="filterDiv fruits">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
-            <div class="filterDiv fruits">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
-            <div class="filterDiv animals">
-                <div class="img-blog"></div>
-                <div class="">
-                    <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
-                </div>
-                <div class="">
-                    <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a parte operacional seria com as despesas com</p>
-                </div>
-                <div class="leia-mais"><a href="">Leia mais »</a></div>
-                <div class="data-postagem">22 de outubro de 2021</div>
-            </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
         </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
+      <div class="filterDiv colors fruits">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
+        </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
+        </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
+      <div class="filterDiv cars">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
+        </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
+        </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
+      <div class="filterDiv colors">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
+        </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
+        </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
+      <div class="filterDiv cars animals">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
+        </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
+        </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
+      <div class="filterDiv colors">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
+        </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
+        </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
+      <div class="filterDiv animals">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
+        </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
+        </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
+      <div class="filterDiv animals">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
+        </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
+        </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
+      <div class="filterDiv fruits">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
+        </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
+        </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
+      <div class="filterDiv fruits animals">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
+        </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
+        </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
+      <div class="filterDiv fruits">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
+        </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
+        </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
+      <div class="filterDiv fruits">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
+        </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
+        </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
+      <div class="filterDiv animals">
+        <div class="img-blog"></div>
+        <div class="">
+          <h1>CUSTO, RISCO E COMPLIANCE TRABALHISTA</h1>
+        </div>
+        <div class="">
+          <p>Se fizéssemos um apanhado geral das empresas brasileiras, na grande maioria delas o maior valor gasto com a
+            parte operacional seria com as despesas com</p>
+        </div>
+        <div class="leia-mais"><a href="">Leia mais »</a></div>
+        <div class="data-postagem">22 de outubro de 2021</div>
+      </div>
     </div>
-    <style>
-        .filterDiv {
-            font-family: "Inter", sans-serif;
-            position: relative;
-        }
-        
-        .filterDiv h1 {
-            color: #022245;
-            padding: 10px;
-            font-weight: 600;
-        }
-        
-        .filterDiv p {
-            color: rgb(58, 58, 58);
-            font-size: 13px;
-            line-height: 1.2em;
-            text-align: left;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        
-        .img-blog {
-            width: 100%;
-            height: 120px;
-            background-image: url("https://source.unsplash.com/random/300x120");
-            background-repeat: no-repeat;
-        }
-        
-        .leia-mais {
-            margin: 10px 0 0 10px;
-            width: 100%;
-            text-align: left;
-        }
-        
-        .leia-mais a {
-            color: #022245;
-            text-decoration: none;
-            font-weight: 400;
-            font-size: 13px;
-        }
-        
-        .data-postagem {
-            width: 100%;
-            text-align: left;
-            position: absolute;
-            bottom: 0;
-            line-height: 22px;
-            font-size: 12px;
-            color: rgb(192, 192, 192);
-            margin-left: 10px;
-        }
-    </style>
-    <style>
-        body::before {
-            display: block;
-            content: "";
-            width: 150px;
-            height: 150px;
-            background-image: url(/img/logo-principal.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin: 40px auto 40px auto;
-        }
-        
-        @media all and (min-width: 920px) {
-            body {
-                padding-top: 150px;
-            }
-            body::before {
-                display: none;
-            }
-        }
-        
-        .row {
-            display: flex;
-            flex-wrap: nowrap;
-            position: relative;
-        }
-        
-        .nav-blog {
-            display: flex;
-            flex: 10%;
-            flex-direction: column;
-            flex-wrap: wrap;
-            background-color: #f3f3f3;
-            position: sticky;
-            top: 0;
-            overflow: hidden;
-        }
-        
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: initial;
-            justify-content: center;
-            flex: 70%;
-            gap: 30px;
-            background-color: rgb(248, 248, 248);
-            background-image: url(/img/textura.png);
-            background-size: 30px;
-            padding: 30px;
-            box-sizing: border-box;
-            min-height: 100vh;
-        }
-        
-        .filterDiv {
-            background-color: #ffffff;
-            color: #ffffff;
-            width: 300px;
-            height: 350px;
-            text-align: center;
-            margin: 2px;
-            display: none;
-            box-shadow: -2px 2px 5px rgb(0, 0, 0, 0.05);
-            border: solid 1px rgb(240, 240, 240);
-            border-radius: 3px;
-            /* Hidden by default */
-        }
-        /* The "show" class is added to the filtered elements */
-        
-        .show {
-            display: block;
-        }
-        /* Style the buttons */
-        
-        .btn {
-            border: none;
-            outline: none;
-            padding: 12px 16px;
-            background-color: #f1f1f1;
-            cursor: pointer;
-            border-top: solid 1px rgb(213, 213, 213);
-            text-align: left;
-        }
-        
-        .btn:last-child {
-            border-top: solid 1px rgb(213, 213, 213);
-            border-bottom: solid 1px rgb(213, 213, 213);
-        }
-        /* Add a light grey background on mouse-over */
-        
-        .btn:hover {
-            background-color: #ddd;
-        }
-        /* Add a dark background to the active button */
-        
-        .btn.active {
-            background-color: #666;
-            color: white;
-        }
-    </style>
+  </div>
+  <style>
+    .filterDiv {
+      font-family: "Inter", sans-serif;
+      position: relative;
+    }
 
-    <script>
-        filterSelection("all")
+    .filterDiv h1 {
+      color: #022245;
+      padding: 10px;
+      font-weight: 600;
+    }
 
-        function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filterDiv");
-            if (c == "all") c = "";
-            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-            for (i = 0; i < x.length; i++) {
-                w3RemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            }
+    .filterDiv p {
+      color: rgb(58, 58, 58);
+      font-size: 13px;
+      line-height: 1.2em;
+      text-align: left;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .img-blog {
+      width: 100%;
+      height: 120px;
+      background-image: url("https://source.unsplash.com/random/300x120");
+      background-repeat: no-repeat;
+    }
+
+    .leia-mais {
+      margin: 10px 0 0 10px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .leia-mais a {
+      color: #022245;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+    .data-postagem {
+      width: 100%;
+      text-align: left;
+      position: absolute;
+      bottom: 0;
+      line-height: 22px;
+      font-size: 12px;
+      color: rgb(192, 192, 192);
+      margin-left: 10px;
+    }
+  </style>
+  <style>
+    body::before {
+      display: block;
+      content: "";
+      width: 150px;
+      height: 150px;
+      background-image: url(/img/logo-principal.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 40px auto 40px auto;
+    }
+
+    @media all and (min-width: 920px) {
+      body {
+        padding-top: 150px;
+      }
+
+      body::before {
+        display: none;
+      }
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: nowrap;
+      position: relative;
+    }
+
+    .nav-blog {
+      display: flex;
+      flex: 10%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-color: #f3f3f3;
+      position: sticky;
+      top: 0;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: initial;
+      justify-content: center;
+      flex: 70%;
+      gap: 30px;
+      background-color: rgb(248, 248, 248);
+      background-image: url(/img/textura.png);
+      background-size: 30px;
+      padding: 30px;
+      box-sizing: border-box;
+      min-height: 100vh;
+    }
+
+    .filterDiv {
+      background-color: #ffffff;
+      color: #ffffff;
+      width: 300px;
+      height: 350px;
+      text-align: center;
+      margin: 2px;
+      display: none;
+      box-shadow: -2px 2px 5px rgb(0, 0, 0, 0.05);
+      border: solid 1px rgb(240, 240, 240);
+      border-radius: 3px;
+      /* Hidden by default */
+    }
+
+    /* The "show" class is added to the filtered elements */
+
+    .show {
+      display: block;
+    }
+
+    /* Style the buttons */
+
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      border-top: solid 1px rgb(213, 213, 213);
+      text-align: left;
+    }
+
+    .btn:last-child {
+      border-top: solid 1px rgb(213, 213, 213);
+      border-bottom: solid 1px rgb(213, 213, 213);
+    }
+
+    /* Add a light grey background on mouse-over */
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    /* Add a dark background to the active button */
+
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+  </style>
+
+  <script>
+    filterSelection("all")
+
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
         }
+      }
+    }
 
-        // Show filtered elements
-        function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {
-                    element.className += " " + arr2[i];
-                }
-            }
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
         }
+      }
+      element.className = arr1.join(" ");
+    }
 
-        // Hide elements that are not selected
-        function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
-                }
-            }
-            element.className = arr1.join(" ");
-        }
-
-        // Add active class to the current control button (highlight it)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
-    </script>
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
 
 
-    <footer>
-        <div class="logo-footer-sociais">
-            <div class="logo-footer"></div>
-            <div class="sociais-footer">
-                <a href="https://api.whatsapp.com/send/?phone=%2B5531984950120&text&app_absent=0" class="whatsapp icon-footer"></a>
-                <a href="" class="youtube icon-footer"></a>
-                <a href="" class="instagram icon-footer"></a>
-            </div>
+  <footer>
+    <div class="logo-footer-sociais">
+      <div class="logo-footer"></div>
+      <div class="sociais-footer">
+        <a href="https://api.whatsapp.com/send/?phone=%2B5531984950120&text&app_absent=0"
+          class="whatsapp icon-footer"></a>
+        <a href="" class="youtube icon-footer"></a>
+        <a href="" class="instagram icon-footer"></a>
+      </div>
 
-        </div>
-        <div class="contato-footer">
-            <h4>ENTRE EM CONTATO</h4>
-            <a href="https://api.whatsapp.com/send/?phone=%2B5531984950120&text&app_absent=0">
-                <p class="whatsapp-footer">31 98495-0120</p>
-            </a>
-            <a href="">
-                <p class="email-footer">contato@vxbconsultoria.com.br</p>
-            </a>
-            <a href="">
-                <p class="endereco-footer">Avenida João Cesar de Oliveira, 1284, Sala 303, Eldorado, Contagem – MG. CEP: 32315-000
-                </p>
-            </a>
+    </div>
+    <div class="contato-footer">
+      <h4>ENTRE EM CONTATO</h4>
+      <a href="https://api.whatsapp.com/send/?phone=%2B5531984950120&text&app_absent=0">
+        <p class="whatsapp-footer">31 98495-0120</p>
+      </a>
+      <a href="">
+        <p class="email-footer">contato@vxbconsultoria.com.br</p>
+      </a>
+      <a href="">
+        <p class="endereco-footer">Avenida João Cesar de Oliveira, 1284, Sala 303, Eldorado, Contagem – MG. CEP:
+          32315-000
+        </p>
+      </a>
 
-        </div>
+    </div>
 
-    </footer>
+  </footer>
 
-    <script type="text/javascript" src="/js/nav_fixed.js"></script>
-    <script type="text/javascript" src="/js/nav_responsivo.js"></script>
+  <script type="text/javascript" src="/js/nav_fixed.js"></script>
+  <script type="text/javascript" src="/js/nav_responsivo.js"></script>
 
 
 
