@@ -66,8 +66,11 @@
             <label for="fmensagem">Escreva aqui como podemos te ajudar</label><span>*</span><br>
             <textarea class="field" name="mensagem" id="fmensagem" placeholder="" cols="50" rows="4"></textarea>
           </div>
-          <input class="field" name="data" placeholder="Escolha uma data">
-          <input class="BTEnvia" name="BTEnvia" type="submit" value="Enviar">
+          <div class="fdata">
+            <label for="fassunto">Sua disponibilidade para conversarmos</label><span>*</span><br>
+            <input class="field" name="data" placeholder="Escolha uma data" onfocus="(this.type='date')">
+          </div>
+          <input class=" BTEnvia" name="BTEnvia" type="submit" value="Enviar">
         </form>
       </div>
 
