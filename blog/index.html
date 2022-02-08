@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <span class=" btn-menu-nav-blog" onclick="openNavBlog()">></span>
+  <span class="btn-menu-nav-blog" onclick="openNavBlog()">&#9776;</span>
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <nav class="nav-content-fixed" id="overlay-content">
@@ -302,6 +302,27 @@
       transition: 0.4s;
     }
 
+    .btn-menu-nav-blog {
+      color: rgb(208, 208, 208);
+      margin: 0 0 15px 15px;
+      line-height: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+
+    .background-nav {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #000000;
+      z-index: 5;
+      opacity: .8;
+    }
+
     @media all and (min-width: 920px) {
       body {
         padding-top: 150px;
@@ -310,6 +331,7 @@
       body::before {
         display: none;
       }
+
 
       .nav-blog {
         z-index: 0;
@@ -436,14 +458,26 @@
   </script>
 
   <script>
+    var backgroundNav = document.createElement("div");
+    backgroundNav.className = "background-nav"
+    backgroundNav.onclick = function () { closeNavBlog() };
+    var navBlog = document.querySelector(".nav-blog");
+    navBlog.onclick = function () { closeNavBlog() }
 
     function openNavBlog() {
-      document.querySelector(".nav-blog").style.left = "0";
+      if (window.innerWidth < 920) {
+        document.querySelector(".nav-blog").style.left = "0";
+        document.querySelector("body").appendChild(backgroundNav);
+      } else {
+        return;
+      }
     }
 
     function closeNavBlog() {
       if (window.innerWidth < 920) {
+        var removeBackgroundNav = document.querySelector(".background-nav");
         document.querySelector(".nav-blog").style.left = "-300px";
+        removeBackgroundNav.parentNode.removeChild(removeBackgroundNav);
       } else {
         return;
       }
