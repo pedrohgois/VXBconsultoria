@@ -2,7 +2,7 @@
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
@@ -12,6 +12,13 @@ footer {
   background-color: #051933;
   background-image: linear-gradient(to top, #031124, #052042);
   position: relative;
+  gap: 200px;
+}
+
+@media (min-width: 1200px) {
+  footer {
+    gap: 400px;
+  }
 }
 
 .logo-footer-sociais {
@@ -158,6 +165,7 @@ footer {
   footer {
     flex-direction: column;
     padding-bottom: 50px;
+    gap: unset;
   }
 
   .logo-footer-sociais {
