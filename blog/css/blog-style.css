@@ -1,0 +1,21 @@
+body::before {
+  display: block;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-image: url(/img/logo-principal.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 40px auto 40px auto;
+}
+
+@media all and (min-width: 920px) {
+  body {
+    padding-top: 150px;
+  }
+
+  body::before {
+    display: none;
+  }
+}
