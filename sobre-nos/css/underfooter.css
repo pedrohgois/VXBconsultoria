@@ -50,6 +50,11 @@
   border-radius: 6px;
 }
 
+.btn-agendar a {
+  text-decoration: none;
+  color: white;
+}
+
 .btn-agendar:hover {
   background-color: #09465c;
   cursor: pointer;

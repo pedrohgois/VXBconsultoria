@@ -1,130 +1,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 .sobre-nos {
-    position: relative;
-    width: 100%;
-    max-width: 1750px;
-    height: 40vw;
-    background-color: rgb(255, 255, 255);
-    margin: auto;
+  position: relative;
+  width: 100%;
+  max-width: 1750px;
+  height: 40vw;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
 }
 
 .foto-advogados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 50vw;
+  height: 34.11vw;
+  float: right;
+  margin-right: 100px;
+  background-image: url(/img/foto-advogados.png);
+  background-size: cover;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.texto-s1 {
+  width: 40vw;
+  height: 30vw;
+  margin-left: 100px;
+  position: absolute;
+  background-color: #051933;
+  background-image: linear-gradient(to bottom right, #051933, #082c59);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.texto-s1 p {
+  color: white;
+  font-weight: 100;
+  font-size: 2vw;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  line-height: 1.25;
+}
+
+.txt-s1-bold {
+  font-weight: 400;
+}
+
+.btn-sobre-nos {
+  display: flex;
+  border-radius: 6px;
+  width: 15vw;
+  height: 4vw;
+  border: solid 1px rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  margin-bottom: 35px;
+}
+
+.btn-sobre-nos:hover {
+  background-color: rgba(0, 17, 49, 0.6);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 920px) {
+  .sobre-nos {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+  }
+  .foto-advogados {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    width: 50vw;
-    height: 34.11vw;
-    float: right;
-    margin-right: 100px;
+    width: 100%;
+    height: 80vw;
+    min-height: 0;
+    float: none;
+    margin-right: 0;
     background-image: url(/img/foto-advogados.png);
     background-size: cover;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.texto-s1 {
-    width: 40vw;
-    height: 30vw;
-    margin-left: 100px;
-    position: absolute;
-    background-color: #051933;
-    background-image: linear-gradient(to bottom right, #051933, #082c59);
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-.texto-s1 p {
-    color: white;
-    font-weight: 100;
-    font-size: 2vw;
-    font-family: "Inter", sans-serif;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    line-height: 1.25;
-}
-
-.txt-s1-bold {
-    font-weight: 400;
-}
-
-.btn-sobre-nos {
+    position: static;
+    transform: unset;
+    background-position: center;
+  }
+  .texto-s1 {
+    width: 100%;
+    height: 90vw;
+    margin-left: 0;
+    position: static;
+    transform: unset;
+  }
+  .texto-s1 p {
+    font-size: 5.5vw;
+    line-height: 1.4;
+  }
+  .btn-sobre-nos {
     display: flex;
+    justify-self: end;
     border-radius: 6px;
-    width: 15vw;
-    height: 4vw;
+    width: 150px;
+    height: 35px;
     border: solid 1px rgb(255, 255, 255);
     font-family: "Inter", sans-serif;
     font-weight: 500;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
     transition: 0.5s ease;
-    margin-bottom: 35px;
-}
-
-.btn-sobre-nos:hover {
-    background-color: rgba(0, 17, 49, 0.6);
-}
-
-a {
-    text-decoration: none;
-}
-
-@media (max-width: 920px) {
-    .sobre-nos {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-        height: auto;
-    }
-    .foto-advogados {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-        width: 100%;
-        height: 80vw;
-        min-height: 0;
-        float: none;
-        margin-right: 0;
-        background-image: url(/img/foto-advogados.png);
-        background-size: cover;
-        position: static;
-        transform: unset;
-        background-position: center;
-    }
-    .texto-s1 {
-        width: 100%;
-        height: 90vw;
-        margin-left: 0;
-        position: static;
-        transform: unset;
-    }
-    .texto-s1 p {
-        font-size: 5.5vw;
-        line-height: 1.40;
-    }
-    .btn-sobre-nos {
-        display: flex;
-        justify-self: end;
-        border-radius: 6px;
-        width: 150px;
-        height: 35px;
-        border: solid 1px rgb(255, 255, 255);
-        font-family: "Inter", sans-serif;
-        font-weight: 500;
-        color: white;
-        font-size: 20px;
-        align-items: center;
-        justify-content: center;
-        transition: 0.5s ease;
-        margin-top: 58%;
-    }
+    margin-top: 58%;
+  }
 }

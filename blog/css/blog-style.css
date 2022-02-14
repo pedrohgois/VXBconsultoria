@@ -81,8 +81,9 @@ ul {
 }
 
 .dados-postagem h4 {
-  margin-top: 20px;
-  color: #636363;
+  margin-top: 30px;
+  color: #858585;
+  font-size: 15px;
 }
 
 .dados-postagem p {
