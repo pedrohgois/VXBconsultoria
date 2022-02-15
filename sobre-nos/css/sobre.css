@@ -34,6 +34,7 @@
 }
 
 .sobre-txt {
+  text-align: justify;
   margin-top: 20px;
   width: 100%;
   max-width: 700px;
