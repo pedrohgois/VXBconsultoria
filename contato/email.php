@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['BTEnvia'])) {
  
- //Variaveis de POST, Alterar somente se necessário 
+ //Variaveis de POST
  //====================================================
  $fname = $_POST['nome'];
  $fwhatsapp = $_POST['whatsapp'];
@@ -12,19 +12,19 @@ if (isset($_POST['BTEnvia'])) {
  
  //====================================================
  
- //REMETENTE --> ESTE EMAIL TEM QUE SER VALIDO DO DOMINIO
+ //Remetente válido do domínio
  //==================================================== 
- $email_remetente = "form@vxbconsultoria.com.br"; // deve ser uma conta de email do seu dominio (este email é o remetente)
+ $email_remetente = "form@vxbconsultoria.com.br";
  //====================================================
  
- //Configurações do email, ajustar conforme necessidade
+ //Configurações do email
  //==================================================== 
- $email_destinatario = "pedrohgois@gmail.com"; // pode ser qualquer email que receberá as mensagens (destinatário)
+ $email_destinatario = "pedrohgois@gmail.com"; // Destinatário
  $email_reply = "$email"; 
- $email_assunto = "Contato feito através do site"; // Este será o assunto da mensagem
+ $email_assunto = "Contato feito através do site"; // Assunto da mensagem
  //====================================================
  
- //Monta o Corpo da Mensagem
+ //Corpo da Mensagem
  //====================================================
  $email_conteudo = "Nome: $fname \n"; 
  $email_conteudo .= "Whatsapp: $fwhatsapp \n";
@@ -34,7 +34,7 @@ if (isset($_POST['BTEnvia'])) {
  $email_conteudo .= "Melhor data para contato: $fdata \n"; 
  //====================================================
  
- //Seta os Headers (Alterar somente caso necessario) 
+ //Seta os Headers
  //==================================================== 
  $email_headers = implode ( "\n",array ( "From: $email_remetente", "Reply-To: $email_reply", "Return-Path: $email_remetente","MIME-Version: 1.0","X-Priority: 3","Content-Type: text/html; charset=UTF-8" ) );
  //====================================================
@@ -42,11 +42,17 @@ if (isset($_POST['BTEnvia'])) {
  //Enviando o email 
  //==================================================== 
  if (mail ($email_destinatario, $email_assunto, nl2br($email_conteudo), $email_headers)){ 
- echo "</b>E-Mail enviado com sucesso!</b>"; 
- } 
- else{ 
- echo "</b>Falha no envio do E-Mail!</b>"; } 
+  echo "<script>alert('Dados enviados com sucesso!');location.href = 'email.php';history.back()</script>";
+} else {
+    echo "<script>alert('Ocorreu um erro no envio, tente novamente.');history.back();</script>";
+}
  //====================================================
 } 
 ?>
  
+
+
+
+
+
+
