@@ -19,7 +19,7 @@ if (isset($_POST['BTEnvia'])) {
  
  //Configurações do email
  //==================================================== 
- $email_destinatario = "pedrohgois@gmail.com"; // Destinatário
+ $email_destinatario = "contato@vxbconsultoria.com.br"; // Destinatário
  $email_reply = "$email"; 
  $email_assunto = "Contato feito através do site"; // Assunto da mensagem
  //====================================================
