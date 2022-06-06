@@ -1,3 +1,3 @@
 # VXBconsultoria
 
-Em construção
+Site desenvolvido para escritório de advocacia.
